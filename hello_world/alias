@@ -1,0 +1,2 @@
+#!/bin bash
+sudo alias q='git add . ; git commit ; git push ;'
