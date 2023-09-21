@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+/**
+* main - Entry point
+*
+* Description: This program demostrates the use of the printf function.
+*
+* Return: Always 0 (Success)
+*/
+
+int main(void)
+{
+	printf("with proper grammar, but the outcome is a piece of art,\n\n");
+	return (0);
+}
