@@ -30,6 +30,10 @@ int main(void)
 	{
 		printf("last digit of %d is %d and is less than 6 and not 0", n, lastDigit);
 	}
+	if (lastDigit < 60
+	{
+		printf("last digit of %d is %d and is less than 6 and not 0", n, lastDigit);
+	}
 
 	return (0);
 }
