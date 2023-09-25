@@ -1,10 +1,7 @@
 /* Include the necessary headers */
 #include <stdio.h>
 
-/* Declaration of the _putchar function (you can omit this if you have a separate _putchar.c file) */
-int _putchar(char c);
-
-/* Declaration of the print_alphabet function (you can omit this if you have a separate 1-alphabet.c file) */
+/* Declare the print_alphabet function */
 void print_alphabet(void);
 
 /**
@@ -14,7 +11,6 @@ void print_alphabet(void);
  */
 int main(void)
 {
-    print_alphabet();
-    return (0);
+	print_alphabet();
+	return (0);
 }
-

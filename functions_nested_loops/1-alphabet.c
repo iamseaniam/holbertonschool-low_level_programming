@@ -6,13 +6,13 @@
  */
 void print_alphabet(void)
 {
-	char word[] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
-	
-	for (i = 0; word[i] != '\0'; i++)
-	{	
-		_putchar(word[i]);
-	}
+	char alphabet = 'a';
 
-	_putchar('\n');
+	while (alphabet <= 'z')
+
+	{
+		putchar(alphabet);
+		alphabet++;
+	}
+	putchar('\n');
 }
