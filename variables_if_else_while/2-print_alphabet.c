@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-/*
-* main - Entry point
+/**
+* main - Entry point of the program
 *
-* Description: This program demonstrates the use of the putchar function.
+* Description:
+* This program demonstrates the use of the putchar function to print
+* lowercase English alphabets.
 *
-* Return: Always 0 (Success)
+* Return:
+* Always 0 (Success)
 */
 int main(void)
-
 {
 
 	char alphabet = 'a';
