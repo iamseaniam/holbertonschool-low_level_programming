@@ -1,20 +1,39 @@
 #include <stdio.h>
 #include "main.h"
 /*
- * This is the main function.
- * It serves as the entry point of the program.
+ * _isupper - Check if a character is uppercase.
+ * @c: The charater to be checked
+ *
+ * Return: 1 if c is uppercase, 0 otherwise.
  */
-int main(void)
+int _isupper(int c)
 {
-	char testChar = 'A';
-
-	if (_isupper(testChar))
+	if (c >= 'A' && c <= 'Z')
 	{
-		printf("%c is uppercase\n", testChar);
+	return (1);
 	}
 	else
 	{
-		printf("%c is not uppercase\n", testChar);
+	return (0);
+	}
+}
+
+/*
+ * main - Entry point of the program.
+ *
+ * Return: Always 0 (success).
+ */
+int main(void)
+{
+	char character = 'A';
+
+	if (_isupper(character))
+	{
+	printf("%c is uppercase\n", character);
+	}
+	else
+	{
+	printf("%c is not uppercase\n", character);
 	}
 
 	return (0);
