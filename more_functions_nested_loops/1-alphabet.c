@@ -10,11 +10,11 @@ int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
-	return (1);
+		return (1);
 	}
 	else
 	{
-	return (0);
+		return (0);
 	}
 }
 
@@ -29,11 +29,11 @@ int main(void)
 
 	if (_isupper(character))
 	{
-	printf("%c is uppercase\n", character);
+		printf("%c is uppercase\n", character);
 	}
 	else
 	{
-	printf("%c is not uppercase\n", character);
+		printf("%c is not uppercase\n", character);
 	}
 
 	return (0);
