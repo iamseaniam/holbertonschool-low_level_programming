@@ -17,24 +17,3 @@ int _isupper(int c)
 		return (0);
 	}
 }
-
-/*
- * main - Entry point of the program.
- *
- * Return: Always 0 (success).
- */
-int main(void)
-{
-	char character = 'A';
-
-	if (_isupper(character))
-	{
-		printf("%c is uppercase\n", character);
-	}
-	else
-	{
-		printf("%c is not uppercase\n", character);
-	}
-
-	return (0);
-}
