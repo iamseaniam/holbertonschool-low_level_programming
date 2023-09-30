@@ -12,7 +12,7 @@ int mul(int a, int b)
 {
 	int result = a * b;
 
-	printf("3 * 4: %d\n", result);
+	printf("%d\n", result);
 
 	return (0);
 }
