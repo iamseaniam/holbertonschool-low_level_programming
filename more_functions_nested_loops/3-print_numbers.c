@@ -1,22 +1,16 @@
-#include <stdio.h>
 #include "main.h"
-/*
-* _isdigit - Check if a character is a digit (0-9)
-* @c: The character to be checked
-*
-* Description: This fuction checks whether a given character is a digit (0-9).
-*
-* Return: 1 if c is a digit, 0 otherwise.
-*/
+
+/**
+ * print_numbers - Prints numbers from 0 to 9 followed by a new line
+ */
 void print_numbers(void)
 {
-	int number = 1;
+	char digit;
 
-	while (number <=9)
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		printf("%d ", number);
-		number++;
+		_putchar(digit);
 	}
 
-	return (0);
+	_putchar('\n');
 }
