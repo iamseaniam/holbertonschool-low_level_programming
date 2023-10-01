@@ -15,4 +15,6 @@ int _putchar(char c);
 
 void print_most_numbers(void);
 
+void most_numbers(void);
+
 #endif

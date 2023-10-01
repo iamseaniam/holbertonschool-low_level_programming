@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Prints numbers from 0 to 9 followed by a new line
+ * most_numbers - Prints numbers from 0 to 14, ten times, followed by a new line
  */
-void print_most_numbers(void)
+void most_numbers(void)
 {
 	char digit;
 
