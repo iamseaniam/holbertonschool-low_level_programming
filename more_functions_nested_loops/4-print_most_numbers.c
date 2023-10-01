@@ -3,7 +3,7 @@
 /**
  * print_numbers - Prints numbers from 0 to 9 followed by a new line
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	char digit;
 
