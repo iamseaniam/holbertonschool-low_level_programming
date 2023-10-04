@@ -15,7 +15,7 @@ int _atoi(char *s)
 
 	while (s[i] == ' ')
 	{
-		i++;
+	i++;
 	}
 
 	if (s[i] == '-')
@@ -30,22 +30,20 @@ int _atoi(char *s)
 
 	while (s[i] >= '0' && s[i] <= '9')
 	{
-		int digit = s[i] - '0';
-
-		if (result > (INT_MAX - digit) / 10)
+	if (result > INT_MAX / 10 || (result == INT_MAX / 10 && s[i] - '0' > INT_MAX % 10))
+	{
+		if (sign == 1)
 		{
-			if (sign == 1)
-			{
-				return INT_MAX;
-			}
-			else
-			{
-				return INT_MIN;
-			}
+			return INT_MAX;
 		}
-			result = result * 10 + (s[i] - '0');
-			i++;
+		else
+		{
+			return INT_MIN;
 		}
+	}
+	result = result * 10 + (s[i] - '0');
+	i++;
+	}
 
 	return result * sign;
 }
