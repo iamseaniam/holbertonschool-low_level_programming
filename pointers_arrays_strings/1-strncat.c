@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-char *_strncat(char *dest, const char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *destStart = dest;
 
@@ -21,7 +21,7 @@ char *_strncat(char *dest, const char *src, int n)
 int main(void) 
 {
 	char dest[20] = "Hello, ";
-	const char *src = "world!";
+	char *src = "world!";
 
 	_strncat(dest, src, 5);
 	printf("%s\n", dest);
