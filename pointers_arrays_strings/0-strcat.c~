@@ -21,8 +21,6 @@ char *_strcat(char *dest, char *src)
 	*dest = '\0';
 	return result;
 }
-
-int main(void)
 {
 	char str1[50] = "Hello, ";
 	char str2[] = "world!";
