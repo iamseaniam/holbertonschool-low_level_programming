@@ -17,14 +17,3 @@ char *_strncat(char *dest, char *src, int n)
 
 	return destStart;
 }
-
-int main(void) 
-{
-	char dest[20] = "Hello, ";
-	char *src = "world!";
-
-	_strncat(dest, src, 5);
-	printf("%s\n", dest);
-
-	return (0);
-}
