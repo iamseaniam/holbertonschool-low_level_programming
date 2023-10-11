@@ -8,6 +8,7 @@
 * @param n Number of bytes to copy.
 * @return A pointer to the beginning of the destination memory area.
 */
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *dest_start = dest;
 

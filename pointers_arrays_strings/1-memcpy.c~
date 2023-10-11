@@ -1,7 +1,13 @@
 #include <stddef.h>
 #include "main.h"
-
-char *_memcpy(char *dest, char *src, unsigned int n)
+/**
+* Copies n bytes from the source memory area to the destination memory area
+*
+* @param dest Pointer to the destination memory area.
+* @param src Pointer to the source memory area.
+* @param n Number of bytes to copy.
+* @return A pointer to the beginning of the destination memory area.
+*/
 {
 	char *dest_start = dest;
 
