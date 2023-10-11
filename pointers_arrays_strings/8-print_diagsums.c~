@@ -11,6 +11,5 @@ void print_diagsums(int *a, int size)
 		sum_primary += a[i * size + i];
 		sum_secondary += a[i * size + (size - 1 - i)];
 	}
-	printf("%d\n", sum_primary);
-	printf("%d\n", sum_secondary);
+	printf("%d, %d\n", sum_primary, sum secondary);
 }
