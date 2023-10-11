@@ -8,7 +8,7 @@
  *prints the characters of the string in reverse order, starting from the
  *end of the string and working its way towards the beginning.
 */
-void _print_rev_recursion(char *s);
+void _print_rev_recursion(char *s)
 {
 	if (*s)
 	{
