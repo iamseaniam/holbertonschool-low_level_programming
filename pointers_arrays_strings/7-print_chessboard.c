@@ -1,32 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
-	for (i = 0; i < 8; i++)
+	int row, col;
+
+	for (row = 0; row < 8; row++)
 	{
-		for (j = 0; j < 8; j++)
+		for (col = 0; col < 8; col++)
 		{
-			printf("%c ", a[i][j]);
+			_putchar(a[row][col]);
 		}
-		printf("\n");
+		_putchar('\n');
 	}
-}
-
-int main(void)
-{
-	char chessboard[8][8] =
-	{
-		{'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
-		{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
-		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-		{'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
-		{'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'}
-	};
-	print_chessboard(chessboard);
-
-	return (0);
 }
