@@ -4,7 +4,7 @@ void print_diagsums(int *a, int size)
 {
 	int i;
 	int sum_primary = 0;
-	int sum_secondary =0;
+	int sum_secondary = 0;
 
 	for (i = 0; i < size; i++)
 	{
