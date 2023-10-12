@@ -4,7 +4,15 @@
 
 int _sqrt_recursion(int n)
 {
-	printf("the square root of %d; %f\n",n, sqrt(n));
+	int root =sqrt(n);
 
-	return (0);
+	if (root * root == n)
+	{
+		return (root);
+	}
+	else
+	{
+		return (-1);
+	}
+
 }
