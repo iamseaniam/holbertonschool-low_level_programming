@@ -4,7 +4,7 @@
 
 int _sqrt_recursion(int n)
 {
-	printf("the square root of %lf; %lf\n",n, sqrt(n));
+	printf("the square root of %d; %n\n",n, sqrt(n));
 
 	return (0);
 }
