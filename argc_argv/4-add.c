@@ -23,11 +23,11 @@ int main(int argc, char *argv[])
 	}
 	int i, j;
 
-	for (int i = 1; i < argc; i++)
+	for ( i = 1; i < argc; i++)
 	{
 		int num = (0);
 
-		for (int j = 0; argv[i][j]; j++)
+		for ( j = 0; argv[i][j]; j++)
 		{
 			if (!isdigit(argv[i][j]))
 			{
