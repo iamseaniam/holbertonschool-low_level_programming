@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 	
 char *_strdup(char *str)
 {
@@ -14,7 +14,7 @@ char *_strdup(char *str)
 
 	if (duplicate == NULL)
 	{
-		return (NULL)
+		return (NULL);
 	}
 	strcpy(duplicate, str);
 
