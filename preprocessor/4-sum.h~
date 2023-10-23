@@ -1,7 +1,8 @@
 #include <stdio.h>
-#include "4-sum.h"
 
-int main(void)
+#define SUM(x, y) ((x) + (y))
+
+int main (void)
 {
 	int num1 = 5;
 	int num2 = 10;
@@ -11,4 +12,3 @@ int main(void)
 
 	return (0);
 }
-
