@@ -3,8 +3,11 @@
 /**
  *Allocates a 2D grid of integers with the given width and height.
  *
+ *This function allocates memory for a 2D grid and initializes all elements to 0.
+ *
  *@param width  The width of the grid.
  *@param height The height of the grid.
+ *
  *@return A pointer to the allocated grid, or NULL if allocation fails.
  */
 int **alloc_grid(int width, int height)
