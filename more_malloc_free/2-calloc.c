@@ -3,11 +3,13 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	unsigned int totalSize;
+
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	unsigned int totalSize = nmemb * size;
+	totalSize = nmemb * size;
 	void *ptr = malloc(totalSize);
 	if (ptr == NULL)
 	{
