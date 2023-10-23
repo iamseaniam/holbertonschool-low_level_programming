@@ -1,7 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/* 
+ *This function, string_nconcat, takes two input strings, 's1' and 's2', nd'n'.
+ *It concatenates the first 'n' characters of 's2' to 's1' or the e 's2' if 'n'
+ *to the length of 's2'. The result is stored in a dynamically allocated string.
+ *
+ *Parameters:
+ *- s1: The first input string. If NULL, it is treated as an empty string.
+ *- s2: The second input string. If NULL, it is treated as an empty string.
+ *- n: The maximum number of characters to concatenate from 's2' to 's1'.
+ *
+ *Return Value:
+ *- Returns a dynamically allocated string containing the concatenated result. 
+ *The caller is responsible for freeing the memory allocated for this string.
+ *- If memory allocation fails, it returns NULL.
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int len1 = 0;
