@@ -1,15 +1,9 @@
-struct user
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
-int main(void)
-{
-	struct User user;
-
-	return (0);
-}
 
 
 
