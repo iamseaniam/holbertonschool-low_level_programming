@@ -3,7 +3,7 @@
 /**
  *main - Entry point
  *
- *Description: A simple C program that demonstrates the use of function pointers
+*Description: A simple C program that demonstrates the use of function pointers
  *to print a name to the console.
  *
  *Return: 0 (Success)
@@ -17,6 +17,7 @@ void print_name(char *name, void (*f)(char *))
 }
 /**
  * print_to_console - Prints the name to the console
+ *
  * @name: The name to be printed
  */
 void print_to_console(char *name)
