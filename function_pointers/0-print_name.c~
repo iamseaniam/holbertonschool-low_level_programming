@@ -16,8 +16,8 @@ void print_to_console(char *name)
 {
 	printf("Name: %s\n", name);
 }
-int main()
 /**
+int main()
 {
 	char name[] = "John Doe";
 	print_name(name, print_to_console);
