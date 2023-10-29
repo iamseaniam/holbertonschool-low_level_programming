@@ -6,10 +6,11 @@
 *Description: A simple C program that demonstrates the use of function pointers
  *to print a name to the console.
  *
- * @print_name does somthing
- * @name also does somthing
- * @f does some stuff 
- *Return: 0 (Success)
+ *
+ * @print_name: does somthing
+ * @name: also does somthing
+ * @f: does some stuff 
+ *Return: 0 (Success
  */
 void print_name(char *name, void (*f)(char *))
 {

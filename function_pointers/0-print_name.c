@@ -9,7 +9,7 @@
  *
  * @print_name: does somthing
  * @name: also does somthing
- * @f: does some stuff 
+ * @f: does some stuff
  *Return: 0 (Success
  */
 void print_name(char *name, void (*f)(char *))
