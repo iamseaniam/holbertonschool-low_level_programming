@@ -12,9 +12,5 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 void print_element(int element)
 {
-	if (element == NULL)
-	{
-		return;
-	}
 	printf("%d ", element);
 }
