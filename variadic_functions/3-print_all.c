@@ -3,17 +3,17 @@
 
 void print_all(const char * const format, ...)
 {
-	if (format == NULL)
-	{
-		printf("Error: format string is NULL\n");
-		return;
-	}
-
 	const char *ptr = format;
 	char c;
 	int i;
 	float f;
 	char *s;
+
+	if (format == NULL)
+	{
+		printf("Error: format string is NULL\n");
+		return;
+	}
 
 	va_list args;
 	va_start(args, format);
