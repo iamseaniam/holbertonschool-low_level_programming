@@ -35,45 +35,39 @@ void print_all(const char * const format, ...)
 																		                        c = va_arg(args, int);
 																					                        printf("%c", c);
 																								                }
-														                else
+
+														                if (format[i] == 'i')
 																	                {
-																				                        if (format[i] == 'i')
-																								                        {
-																												                                num = va_arg(args, int);
-																																                                printf("%d", num);
-																																				                        }
-																							                        else
-																											                        {
-																															                                if (format[i] == 'f')
-																																				                                {
-																																									                                        f = va_arg(args, double);
-																																														                                        printf("%f", f);
-																																																			                                }
-																																			                                else
-																																								                                {
-																																													                                        if (format[i] == 's')
-																																																			                                        {
-																																																									                                                str = va_arg(args, char *);
-																																																															                                                if (str != NULL)
-																																																																						                                                {
-																																																																													                                                        printf("%s", str);
-																																																																																				                                                }
-																																																																					                                                else
-																																																																												                                                {
-																																																																																			                                                        printf("(nil)");
-																																																																																										                                                }
-																																																																											                                        }
-																																																		                                }
-																																							                        }
+																				                        num = va_arg(args, int);
+																							                        printf("%d", num);
 																										                }
 
-																                if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
+																                if (format[i] == 'f')
 																			                {
-																						                        printf(", ");
-																									                }
+																						                        f = va_arg(args, double);
+																									                        printf("%f", f);
+																												                }
 
-																		                i++;
-																				        }
+																		                if (format[i] == 's')
+																					                {
+																								                        str = va_arg(args, char *);
+																											                        if (str != NULL)
+																															                        {
+																																			                                printf("%s", str);
+																																							                        }
+																														                        else
+																																		                        {
+																																						                                printf("(nil)");
+																																										                        }
+																																	                }
+
+																				                if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
+																							                {
+																										                        printf(", ");
+																													                }
+
+																						                i++;
+																								        }
 
 									        printf("\n");
 
