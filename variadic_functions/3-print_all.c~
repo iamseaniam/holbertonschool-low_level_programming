@@ -17,7 +17,7 @@
  *Any other character in the format string is ignored.
  *It adds a new line at the end.
  */
-void print_all(const char * const format, ...);
+void print_all(const char * const format, ...)
 {
 	va_list args;
 	unsigned int i = 0;
