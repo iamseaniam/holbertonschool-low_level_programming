@@ -9,7 +9,7 @@ void print_all(const char * const format, ...)
 		return;
 	}
 
-	const char *ptr = format;
+	const char *ptr;
 	char c;
 	int i;
 	float f;
