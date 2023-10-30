@@ -21,7 +21,7 @@ void print_name(char *name, void (*f)(char *))
  *print_to_console - Prints the name to the console.
  *@name: The name to be printed.
  *
- *Description: This function takes a name as a parameter and prints it to the console
+ *Description: This function takes a name as a parameter and prints it to the c
  *using the printf function.
  */
 void print_to_console(char *name)
