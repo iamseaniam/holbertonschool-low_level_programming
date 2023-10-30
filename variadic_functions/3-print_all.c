@@ -3,6 +3,7 @@
 
 void print_all(const char * const format, ...)
 {
+	va_list args;
 	const char *ptr = format;
 	char c;
 	int i;
@@ -15,8 +16,8 @@ void print_all(const char * const format, ...)
 		return;
 	}
 
-	va_list args;
 	va_start(args, format);
+
 	while (*ptr)
 	{
 		switch (*ptr)
