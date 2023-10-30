@@ -11,33 +11,35 @@ void print_all(const char * const format, ...)
 			    float f;
 			        char *s;
 
-				    while (*format)
-					        {
-							        switch (*format)
-									        {
-											            case 'c':
-													                    c = va_arg(args, int);
-															                    printf("%c", c);
-																	                    break;
-																			                case 'i':
-																			                    i = va_arg(args, int);
-																					                    printf("%d", i);
-																							                    break;
-																									                case 'f':
-																									                    f = va_arg(args, double);
-																											                    printf("%f", f);
-																													                    break;
-																															                case 's':
-																															                    s = va_arg(args, char *);
-																																	                    printf("%s", (s == NULL) ? "(nil)" : s);
-																																			                    break;
-																																					            }
+				    const char *ptr = format;
 
-								        format++;
-									    }
+				        while (*ptr)
+						    {
+							            switch (*ptr)
+									            {
+											                case 'c':
+														                c = va_arg(args, int);
+																                printf("%c", c);
+																		                break;
+																				            case 'i':
+																				                i = va_arg(args, int);
+																						                printf("%d", i);
+																								                break;
+																										            case 'f':
+																										                f = va_arg(args, double);
+																												                printf("%f", f);
+																														                break;
+																																            case 's':
+																																                s = va_arg(args, char *);
+																																		                printf("%s", (s == NULL) ? "(nil)" : s);
+																																				                break;
+																																						        }
 
-				        va_end(args);
+								            ptr++;
+									        }
 
-					    printf("\n");
+					    va_end(args);
+
+					        printf("\n");
 }
 
