@@ -3,15 +3,14 @@
 
 void print_all(const char * const format, ...)
 {
-	    va_list args;
-	        va_start(args, format);
+	    const char *ptr = format;
+	        char c;
+		    int i;
+		        float f;
+			    char *s;
 
-		    char c;
-		        int i;
-			    float f;
-			        char *s;
-
-				    const char *ptr = format;
+			        va_list args;
+				    va_start(args, format);
 
 				        while (*ptr)
 						    {
