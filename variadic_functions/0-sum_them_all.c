@@ -8,6 +8,8 @@
  *Description: This function takes the number of parameters @n and a variable
  *number of arguments using the ellipsis (...) syntax. It returns
  *the sum of all the parameters. If @n is 0, it returns 0.
+ *
+ * Return: The sum of all the parameters.
  */
 int sum_them_all(const unsigned int n, ...)
 {
