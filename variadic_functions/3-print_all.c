@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdarg.h>
-
+/**
+ * print_all - Prints values based on the format string
+ * @format: The format string containing the format specifiers
+ * 'c' for char, 'i' for int, 'f' for float, 's' for string
+ * Any other character will be ignored
+ * If format is NULL, an error message will be printed
+ * and the function will return early
+ * @...: The values to be printed based on the format string
+ */
 void print_all(const char * const format, ...)
 {
 	va_list args;
