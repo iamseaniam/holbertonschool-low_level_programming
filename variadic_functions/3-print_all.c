@@ -20,12 +20,9 @@ void print_all(const char * const format, ...)
 
 	while (*ptr)
 	{
-		if (!firstArg)
+		if (!firstArg && *ptr != ' ')
 		{
-			if (*ptr != ' ')
-			{
-				printf(", ");
-			}
+			printf(", ");
 		}
 
 		switch (*ptr)
