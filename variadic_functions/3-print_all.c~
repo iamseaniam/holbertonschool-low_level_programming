@@ -9,6 +9,7 @@ void print_all(const char * const format, ...)
 	int i;
 	float f;
 	char *s;
+	int firstArg = 1;
 
 	if (format == NULL)
 	{
@@ -20,6 +21,11 @@ void print_all(const char * const format, ...)
 
 	while (*ptr)
 	{
+		if (!firstArg)
+		{
+			printf(", ");
+		}
+
 		switch (*ptr)
 		{
 			case 'c':
