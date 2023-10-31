@@ -13,8 +13,7 @@ void print_all(const char * const format, ...)
 
 	if (format == NULL)
 	{
-		printf("Error: format string is NULL\n");
-		return;
+		
 	}
 
 	va_start(args, format);
@@ -23,7 +22,10 @@ void print_all(const char * const format, ...)
 	{
 		if (!firstArg)
 		{
-			printf(", ");
+			if (*ptr != ' ')
+			{
+				printf(", ");
+			}
 		}
 
 		switch (*ptr)
