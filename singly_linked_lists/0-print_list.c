@@ -2,14 +2,16 @@
 
 size_t print_list(const list_t *h)
 {
-    if (*str == NULL)
-        print("[0] (nil)");
+    char *str;
+    const list_t *node = h;
 
-    while node:
+    if (*str == NULL)
+        printf("[0] (nil)");
+
+    if (node != NULL)
     {
-        printf(node.value)
-        node = node.next
+        printf("%s\n"), node->str);
+        node = node->next;
     }
-    return(h)
 }
 
