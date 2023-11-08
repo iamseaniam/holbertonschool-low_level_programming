@@ -11,10 +11,5 @@ size_t print_list(const list_t *h)
 		node = node->next;
 		size++;
 	}
-
-	if (node->str == NULL)
-	{
-		printf("[0], (nil)");
-	}
 	return (size);
 }
