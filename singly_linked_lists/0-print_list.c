@@ -1,5 +1,4 @@
 #include "lists.h"
-
 size_t print_list(const list_t *h)
 {
 	size_t size = 0;
@@ -7,7 +6,11 @@ size_t print_list(const list_t *h)
 
 	while (node != NULL)
 	{
-		printf("[%d] %s\n", (int)strlen(node->str), node->str);
+		if (node->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", (int)strlen(node->str), node->str);
+		
 		node = node->next;
 		size++;
 	}
