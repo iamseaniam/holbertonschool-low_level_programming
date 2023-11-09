@@ -10,7 +10,7 @@ size_t list_len(const list_t *h)
 		if (node->str == NULL)
 			return (size);
 		else
-			printf("%s\n", node->str);
+			printf("%s\n");
 
 		node = node->next;
 		size++;
