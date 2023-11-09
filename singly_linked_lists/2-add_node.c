@@ -7,7 +7,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (*head == NULL)
 	{
-		list_t *new_node = malloc(sizeof(list_t));
+		new_node = malloc(sizeof(list_t));
 		if (new_node == NULL)
 			return (NULL);
 	}
@@ -20,9 +20,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	new_node->str = clonedSheep_str;
-
-	new_node->next = NULL;
-
+	new_node->next = *head;
 	*head = new_node;
 
 	return (new_node);
