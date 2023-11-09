@@ -24,6 +24,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	new_node->str = clonedSheep_str;
+	new_node->len = strlen(clonedSheep_str);
 	new_node->next = *head;
 	*head = new_node;
 
