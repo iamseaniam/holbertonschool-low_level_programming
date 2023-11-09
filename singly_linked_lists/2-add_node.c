@@ -3,6 +3,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node = NULL;
+	char *clonedSheep_str;
 
 	if (*head == NULL)
 	{
@@ -11,11 +12,18 @@ list_t *add_node(list_t **head, const char *str)
 			return (NULL);
 	}
 
-	char *clonedSheep_str = strdup(str);
+	clonedSheep_str = strdup(str);
 	if (clonedSheep_str == NULL)
 	{
 		free(new_node);
 		return (NULL);
 	}
 
+	new_node->str = clonedSheep_str;
+
+	new_node->next = NULL;
+
+	*head = new_node;
+
+	return (new_node);
 }
