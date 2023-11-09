@@ -8,7 +8,7 @@ size_t list_len(const list_t *h)
 	while (node != NULL)
 	{
 		if (node->str == NULL)
-			return;
+			return (size);
 		else
 			printf("[%d] %s\n", (int)strlen(node->str), node->str);
 
