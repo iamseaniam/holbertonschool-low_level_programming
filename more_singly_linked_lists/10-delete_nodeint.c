@@ -34,12 +34,12 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (temp == NULL || temp->next == NULL)
 	{
-		return -1;
+		return (-1);
 	}
 
 	next_node = temp->next->next;
 	free(temp->next);
 	temp->next = next_node;
 
-	return 1;
+	return (1);
 }
