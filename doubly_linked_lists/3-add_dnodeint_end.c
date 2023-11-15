@@ -14,7 +14,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if (newNode == NULL)
 	{
 		printf("cannot be NULL");
-		return;
+		return (NULL);
 	}
 
 	newNode->n = n;
