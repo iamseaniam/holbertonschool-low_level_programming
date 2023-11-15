@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/seana/OneDrive/Desktop/holbertonschool-low_level_programming/bit_manipulation",
-      "program": "c:/Users/seana/OneDrive/Desktop/holbertonschool-low_level_programming/bit_manipulation/build/Debug/outDebug",
+      "cwd": "c:/Users/seana/OneDrive/Desktop/holbertonschool-low_level_programming/doubly_linked_lists",
+      "program": "c:/Users/seana/OneDrive/Desktop/holbertonschool-low_level_programming/doubly_linked_lists/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
