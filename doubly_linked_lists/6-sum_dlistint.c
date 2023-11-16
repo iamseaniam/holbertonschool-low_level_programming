@@ -2,7 +2,7 @@
 
 int sum_dlistint(dlistint_t *head)
 {
-	dlistint_t node* ptr == head;
+	dlistint_t *ptr = head;
 	int sum = 0;
 
 	if (ptr == NULL)
