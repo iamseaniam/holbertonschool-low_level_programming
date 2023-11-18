@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/seana/OneDrive/Desktop/holbertonschool-low_level_programming/doubly_linked_lists",
-      "program": "c:/Users/seana/OneDrive/Desktop/holbertonschool-low_level_programming/doubly_linked_lists/build/Debug/outDebug",
+      "cwd": "c:/Users/seana/OneDrive/Desktop/holbertonschool-low_level_programming/hash_tables",
+      "program": "c:/Users/seana/OneDrive/Desktop/holbertonschool-low_level_programming/hash_tables/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
